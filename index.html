@@ -30,15 +30,15 @@
             <div class="nav__menu" id="nav-menu">
                <ul class="nav__list">
                   <li class="nav__item">
-                     <a href="#" class="nav__link active-link">Home</a>
+                     <a href="#home" class="nav__link active-link">Home</a>
                   </li>
 
                   <li class="nav__item">
-                     <a href="#" class="nav__link">About Us</a>
+                     <a href="#about" class="nav__link">About Us</a>
                   </li>
 
                   <li class="nav__item">
-                     <a href="#" class="nav__link">Products</a>
+                     <a href="#products" class="nav__link">Products</a>
                   </li>
 
                   <li class="nav__item">
@@ -80,9 +80,17 @@
       <!--==================== LOGIN/REGISTER ====================-->
       <div class="login" id="login">
          <form action="" class="login__form">
-            <button type="button" class="login__button" onclick="navigateToPage()">Register</button>
+            <button type="button" class="login__button">
+                <a href="register.html">
+                    Register
+                </a>
+            </button>
 
-            <button type="button" class="login__button" onclick="navigateToPage()">Log In</button>
+            <button type="button" class="login__button" >
+                <a href="login.html">
+                    Log In
+                </a>
+            </button>
          </form>
 
          <i class="ri-close-line login__close" id="login-close"></i>
@@ -91,11 +99,68 @@
       <!--==================== MAIN ====================-->
       <main class="main">
          <!--==================== HOME ====================-->
-         
+         <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">SHOP <br> WITH NO <br> LIMITS</h1>
+
+                    <p class="home__description">
+                        We got everything for your schooling needs!,
+                        From essential supplies to the latest gadgets, 
+                        our extensive collection ensures you're well-prepared and set for success. 
+                    </p>
+
+                    <div class="home__buttons">
+                        <a href="#products" class="button-1 button__ghost">Buy Now</a>
+                    </div>
+                </div>
+
+                <div class="home__images">
+                    <div class="home__circle">
+                        <div class="home__subcircle"></div>
+                    </div>
+
+                    <img src="assets/img/BISCUITS-1.png" alt="" class="home__img">
+
+                    <img src="assets/img/BISCUITS-1.png" alt="" class="home__chips-1">
+                    <img src="assets/img/BISCUITS-2.png" alt="" class="home__chips-2">
+                    <img src="assets/img/BISCUITS-3.png" alt="" class="home__chips-3">
+                    <img src="assets/img/DRINKS-1.png" alt="" class="home__tomato-1">
+                    <img src="assets/img/DRINKS-2.png" alt="" class="home__tomato-2">
+                    <img src="assets/img/DRINKS-3.png" alt="" class="home__leaf">
+                </div>
+            </div>
+         </section>
+
+         <!--==================== ABOUT ====================-->
+         <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__images">
+                    <img src="assets/img/MAYAH.jpg" alt="" class="about__img">
+                </div>
+                
+                <div class="about__data">
+                    <h1 class="about__title">About Us</h1>
+
+                    <p class="about__description">
+                        At <span class="about__maya">Mayah Store</span>, we understand that preparation is the key to success. 
+                        That's why we offer a comprehensive selection of products tailored to meet all your academic and personal needs. 
+                        From basic school supplies like notebooks and pens to advanced tech gadgets that keep you ahead of the curve, 
+                        our inventory is carefully curated to enhance your educational experience. 
+                        Dive into our extensive collection of high-quality items, including eco-friendly stationery, 
+                        innovative study aids, and the latest electronic devices, 
+                        all designed to support and inspire your journey towards academic excellence and personal growth. 
+                        Whether you're gearing up for a new school year or tackling everyday challenges, 
+                        <span class="about__maya">Mayah Store</span> is your trusted partner in achieving success and exceeding your goals.
+                    </p>
+                </div>
+            </div>
+         </section>
+
          <!--==================== PRODUCTS ====================-->
          <section class="products section" id="products">
             <div class="products__container container">
-                <h2 class="section__title">
+                <h2 class="home__title section__title">
                     Choose our delicious and best products
                 </h2>
 
@@ -317,11 +382,13 @@
         <i class='bx bx-up-arrow-alt' ></i>
       </a>
       
+      <!--=============== SCROLL REVEAL ANIMATION ===============-->
+      <script src="assets/js/scrollreveal.min.js "></script>
+            
       <!--=============== MIXITUP FILTER ===============-->
       <script src="assets/js/mixitup.min.js "></script>
 
       <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>
-
-   </body>
+    </body>
 </html>
